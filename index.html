@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IA-DROPDOWN - A Jquery Script</title>
+    <link href="assets/css/main.css" rel="stylesheet" />
+
+  </head>
+  <body class="text-gray-800">
+    <div class="max-w-7xl mx-auto">
+      <!-- intro  -->
+      <div class="p-6">
+        <h1 class="text-3xl text-center font-bold mb-3">IA-DROPDOWN</h1>
+        <!-- block  -->
+        <div class="p-4 rounded-lg text-sm bg-gray-200 text-gray-900">
+          <p class="mb-2 text-center">
+            This library is powered by <b>JQUERY</b> and it helps you setup
+            dropdowns quickly and simply.
+          </p>
+        </div>
+        <br />
+      </div>
+      <!-- preview  -->
+      <div class="p-16 pb-32 flex">
+        <div
+          data-dropdown-wrapper=""
+          class="relative inline-block text-left mx-auto"
+        >
+          <div>
+            <button
+              data-dropdown-trigger="trigger"
+              type="button"
+              class="
+                inline-flex
+                justify-center
+                w-full
+                rounded-md
+                border border-gray-300
+                shadow-sm
+                px-4
+                py-2
+                bg-white
+                text-sm
+                font-medium
+                text-gray-700
+                hover:bg-gray-50
+                focus:outline-none
+                focus:ring-2
+                focus:ring-offset-2
+                focus:ring-offset-gray-100
+                focus:ring-indigo-500
+              "
+              id="menu-button"
+              aria-expanded="true"
+              aria-haspopup="true"
+            >
+              Example
+              <!-- Heroicon name: solid/chevron-down -->
+              <svg
+                class="-mr-1 ml-2 h-5 w-5"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+                aria-hidden="true"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </button>
+          </div>
+          <div
+            data-dropdown-menu=""
+            style="opacity: 0"
+            class="
+              origin-top-right
+              absolute
+              right-0
+              mt-2
+              w-56
+              rounded-md
+              shadow-lg
+              bg-white
+              ring-1 ring-black ring-opacity-5
+              focus:outline-none
+            "
+            role="menu"
+            aria-orientation="vertical"
+            aria-labelledby="menu-button"
+            tabindex="-1"
+          >
+            <div class="py-1" role="none">
+              <!-- Active: "bg-gray-100 text-gray-900", Not Active: "text-gray-700" -->
+              <a
+                href="#"
+                class="text-gray-700 block px-4 py-2 text-sm hover:bg-gray-100"
+                role="menuitem"
+                tabindex="-1"
+                id="menu-item-0"
+                >Account settings</a
+              >
+              <a
+                href="#"
+                class="text-gray-700 block px-4 py-2 text-sm hover:bg-gray-100"
+                role="menuitem"
+                tabindex="-1"
+                id="menu-item-1"
+                >Support</a
+              >
+              <a
+                href="#"
+                class="text-gray-700 block px-4 py-2 text-sm hover:bg-gray-100"
+                role="menuitem"
+                tabindex="-1"
+                id="menu-item-2"
+                >License</a
+              >
+              <form method="POST" action="#" role="none">
+                <button
+                  type="submit"
+                  class="
+                    text-gray-700
+                    block
+                    w-full
+                    text-left
+                    px-4
+                    py-2
+                    text-sm
+                    hover:bg-red-100
+                  "
+                  role="menuitem"
+                  tabindex="-1"
+                  id="menu-item-3"
+                >
+                  Sign out
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- jquery  -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <!-- main script  -->
+    <script src="assets/js/ia-dropdown.min.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
